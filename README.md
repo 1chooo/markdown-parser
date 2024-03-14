@@ -1,82 +1,46 @@
-## 📝 TypePrint - Your Markdown Editor and Preview Tool
+# Getting Started with Create React App
 
-TypePrint is a modern Markdown editor built, designed to provide real-time preview of Markdown content. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 🚀 Features
+## Available Scripts
 
-- Real-Time Preview
-- Synchronized Scrolling
-- User-Friendly Interface
-- Saves in Local Storage, so you don't lose your work.
-- Extended Markdown Support:
-  - Headings (H1 - H6)
-  - Bold and Italic Text
-  - Strikethrough
-  - Blockquotes
-  - Inline Code
-  - Horizontal Rules
-  - Highlighted Text
-  - Links and Images
-  - Unordered (Bullet) Lists
+In the project directory, you can run:
 
-## 📦 Technologies
+### `npm start`
 
-- `CSS`
-- `React`
-- `TypeScript`
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## 🍊 Process
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-I started by making the UI, focusing on getting the text from the textarea to show up in the preview area right away.
+### `npm test`
 
-Then, I worked on the Markdown features. I began with headings because I already had an idea for that.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Next was bold text, which was trickier. I did some research online about how to make text bold. I saw many functionalities involving regex. However, I didn't use regex because I'm not very familiar with it.
+### `npm run build`
 
-As a result, I ended up trying to figure it out myself. I used a while loop and for loop to make a function that turns text bold in HTML. This function looks for `**` or `__` and makes the text between them bold.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-After that, I made similar functions for italics and other features. The bold text function was the trickiest part, but once that was done, it was easier to make the other functions.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-The whole process was about building things step by step, starting with the basics and adding more features as I went.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 📚 What I Learned
+### `npm run eject`
 
-I got a chance to use while loops and other types of loops a lot. It had been a while since I last used them this much, so it was good practice.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-In this project, I worked with `dangerouslySetInnerHTML`, which is used for adding HTML directly to a web page. I learned that it needs to be used very carefully because bad scripts could get into the site.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-So, I handled it in a way where I created special functions to convert Markdown to HTML. These functions identify the correct parts of Markdown and safely turn them into HTML.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-By doing this, I made sure that no dangerous code, like a script that might try to steal information I don't have or cause problems on the site, got through.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## 💡 Future Improvements
+## Learn More
 
-- Adding the ability to write:
-  - Ordered Lists
-  - Tables
-  - Code Blocks
-  - Task Lists
-- Adding the ability to export Markdown to PDF format.
-- Ability to save Markdown files to your local machine.
-- Supporting additional Markdown extensions for more versatility.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-
-## 🐛 Bugs and Issues
-
-It has some issues with nested markdown elements, like a list inside a blockquote or a blockquote inside a list.
-
-## 🚦 Running the Project
-
-To run the project in your local environment, follow these steps:
-
-1. Clone the repository to your local machine.
-2. Run `npm install` or `yarn` in the project directory to install the required dependencies.
-3. Run `npm run start` or `yarn start` to get the project started.
-4. Open [http://localhost:5173](http://localhost:5173) (or the address shown in your console) in your web browser to view the app.
-
-## 🎥 Preview
-
-https://github.com/mirayatech/TypePrint/assets/71933266/ab7ca47d-7f73-475d-8217-18913159ce28
-
-
-   
+To learn React, check out the [React documentation](https://reactjs.org/).
